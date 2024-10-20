@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Premier champ de texte -->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrer le premier mot"
+        android:inputType="text" />
+
+    <!-- Deuxième champ de texte -->
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrer le deuxième mot"
+        android:inputType="text" />
+
+    <!-- Case à cocher pour ajouter un espace -->
+    <CheckBox
+        android:id="@+id/checkBoxSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un espace" />
+
+    <!-- Bouton de concaténation -->
+    <Button
+        android:id="@+id/buttonConcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONCATÉNER"
+        android:onClick="concat" />
+</LinearLayout>
